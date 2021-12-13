@@ -1,1 +1,1 @@
-header{background-color:#add8e6}
+.sidebar{position:fixed;top:0;left:0;height:100%;background:#000;-webkit-transform:translate(-100%);transform:translate(-100%)}.show-sidebar{-webkit-transform:translate(0);transform:translate(0)}.close-icon{margin-top:50%}.test-red{border:1px solid red}.test-blue{border:1px solid blue}ul,ol{padding:0}ul,ol{list-style:none}*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}:root{font-size:16px}a,a:hover{text-decoration:none;color:#fff}

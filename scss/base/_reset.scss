@@ -1,0 +1,21 @@
+/* Remove default padding */
+
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
