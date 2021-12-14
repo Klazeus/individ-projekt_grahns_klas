@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  background: black;
+  background: var(--dark);
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
 }
@@ -15,6 +15,23 @@
 
 .close-icon {
   margin-top: 50%;
+}
+
+.navbar-main {
+  background-color: var(--lightDark);
+}
+
+.navbar-second {
+  background-color: var(--blue);
+}
+
+.search-btn {
+  border: none;
+  text-decoration: none;
+  background-color: #0e4b6d;
+  color: white;
+  border-radius: 4px;
+  padding: 0px 15px;
 }
 
 .test-red {
@@ -49,7 +66,20 @@ ol {
   font-size: 16px;
 }
 
+* {
+  font-family: Helvetica, Arial;
+}
+
 a, a:hover {
   text-decoration: none;
   color: white;
+}
+
+:root {
+  --blue: hsla(201, 77%, 24%, 1);
+  --gray: hsla(0, 0%, 20%, 1);
+  --lightDark: hsla(210, 11%, 15%, 1);
+  --dark: hsla(0, 0%, 11%, 1);
+  --light: hsla(0, 0%, 100%, 1);
+  --darkLight: hsla(220, 11%, 95%, 1);
 }
