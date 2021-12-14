@@ -20,9 +20,40 @@
 .navbar-main {
   background-color: var(--lightDark);
 }
+@media only screen and (min-width: 36rem) {
+  .navbar-main .mobile-menu {
+    display: none;
+  }
+  .navbar-main .logo-mobile {
+    display: none;
+  }
+  .navbar-main .fa-user {
+    font-size: 1.5rem;
+  }
+  .navbar-main .fa-shopping-bag {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 36rem) {
+  .navbar-main .searchbar {
+    display: none;
+  }
+  .navbar-main .logo {
+    display: none;
+  }
+}
 
 .navbar-second {
   background-color: var(--blue);
+}
+.navbar-second .nav-link {
+  padding: 0 0 0 2rem;
+  color: var(--light);
+}
+@media only screen and (max-width: 36rem) {
+  .navbar-second {
+    display: none;
+  }
 }
 
 .search-btn {

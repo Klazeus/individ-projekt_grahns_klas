@@ -13,25 +13,33 @@
     <nav class="navbar-main navbar">
       <div class="container">
           <div class="col-3">
-              <div class="image col-12 col-sm-8 col-xl-6">
+              <div class="mobile-menu">
+                <a href="javascript:void(0);" class="sidebar-toggle-mobile">
+                  <i class="fas fa-bars"></i>
+                </a>
+              </div>
+              <div class="logo col-12 col-sm-8 col-xl-6">
                 <img src="img/logo/webb-logo-white.svg" alt="synergize">
               </div>
           </div>
-          <div class="col-6 position-relative">
-            <div class="input-group mb-3 position-absolute top-50 translate-middle-y">
+          <div class="col-6 col-lg-7 position-relative">
+            <div class="searchbar input-group mb-3 position-absolute top-50 translate-middle-y">
               <input type="text" class="form-control" placeholder="Search for a product" aria-label="Search for a product" aria-describedby="button-addon2">
               <button class="search-btn" type="button" id="button-addon2">
                 <i class="fas fa-search"></i>
               </button>
             </div>
+            <div class="logo-mobile col-6 mx-auto">
+              <img src="img/logo/webb-logo-white.svg" alt="synergize">
+            </div>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-lg-2">
             <div class="nav-icons float-end">
               <a href="javascript:void(0);" class="user-icon me-4">
-                <i class="fas fa-user fa-lg"></i>
+                <i class="fas fa-user"></i>
               </a>
               <a href="javascript:void(0);" class="shopping-cart">
-                <i class="fas fa-shopping-bag fa-lg"></i>
+                <i class="fas fa-shopping-bag"></i>
               </a>
             </div>
           </div>
@@ -39,11 +47,25 @@
     </nav>
     <nav class="navbar-second navbar">
       <div class="container">
-        <div class="col">
-          <a href="javascript:void(0);" class="sidebar-toggle">
-            <i class="fas fa-bars"></i>
-            <span class="icon-text">All</span>
-          </a>
+        <div class="col-12">
+          <ul class="nav">
+            <a href="javascript:void(0);" class="sidebar-toggle">
+              <i class="fas fa-bars"></i>
+              <span class="icon-text">All</span>
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Costumer Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Current Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

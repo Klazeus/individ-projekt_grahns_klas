@@ -1,7 +1,41 @@
 .navbar-main {
     background-color: var(--lightDark);
+    @media only screen and (min-width: 36rem){
+        .mobile-menu{
+            display: none;
+        }
+        .logo-mobile {
+            display: none;
+        }
+        .fa-user {
+            font-size: 1.5rem;
+        }
+        .fa-shopping-bag {
+            font-size: 1.5rem;
+        }
+    }
+    @media only screen and (max-width: 36rem){
+        .searchbar{
+            display: none;
+        }
+        .logo {
+            display: none;
+        }
+    }
+
 }
 
 .navbar-second {
     background-color: var(--blue);
+    .nav-link {
+        padding: 0 0 0 2rem;
+        color: var(--light);
+    }
+    @media only screen and (max-width: 36rem){
+        &{
+            display: none;
+        }
+    }
 }
+
+// 48 rem
