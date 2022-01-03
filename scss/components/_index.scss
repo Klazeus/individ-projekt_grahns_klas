@@ -1,3 +1,13 @@
+/* Large */
+
 @forward './large/sidebar';
 @forward './large/navbar';
+@forward './large/carousel';
+@forward './large/cart';
+@forward './large/product';
+
+/* Small */
+
 @forward './small/button';
+@forward './small/rating';
+@forward './small/title';

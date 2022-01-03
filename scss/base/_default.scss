@@ -6,7 +6,10 @@
     font-family: Helvetica, Arial;
 }
 
+body {
+    background-color: var(--darkLight);
+}
+
 a, a:hover {
     text-decoration: none;
-    color: white;
 }

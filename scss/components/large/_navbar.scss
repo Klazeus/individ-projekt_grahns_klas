@@ -1,5 +1,8 @@
 .navbar-main {
     background-color: var(--lightDark);
+    a, a:hover {
+        color: var(--light);
+    }
     @media only screen and (min-width: 36rem){
         .mobile-menu{
             display: none;
@@ -27,6 +30,9 @@
 
 .navbar-second {
     background-color: var(--blue);
+    a, a:hover {
+        color: var(--light);
+    }
     .nav-link {
         padding: 0 0 0 2rem;
         color: var(--light);
@@ -37,5 +43,3 @@
         }
     }
 }
-
-// 48 rem

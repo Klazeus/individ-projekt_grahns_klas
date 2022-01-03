@@ -2,8 +2,17 @@
 .search-btn {
     border: none;
     text-decoration: none;
-    background-color: #0e4b6d;
+    background-color: var(--blue);
     color: white;
-    border-radius: 4px;
-    padding: 0px 15px;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+}
+
+.action-btn {
+  background-color: var(--blue);
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
 }
