@@ -7,18 +7,41 @@
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
   z-index: 1000;
+  padding: 0;
 }
 .sidebar a, .sidebar a:hover {
+  color: var(--light);
+}
+.sidebar-header {
+  padding: 0 1rem;
+}
+.sidebar-header-img {
+  width: 9rem;
+}
+.sidebar-header-close {
+  float: right;
+  line-height: 4rem;
+  padding-right: 1rem;
+}
+.sidebar-body-item:hover {
+  background-color: var(--lightDark);
+}
+.sidebar-body-item-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.sidebar-body-item-link-chevron {
+  float: right;
+  margin-right: 1rem;
+  line-height: 1.5rem;
+}
+.sidebar-body-title {
   color: var(--light);
 }
 
 .show-sidebar {
   -webkit-transform: translate(0);
           transform: translate(0);
-}
-
-.close-icon {
-  margin-top: 50%;
 }
 
 .navbar-main {
@@ -219,6 +242,61 @@
   }
 }
 
+.giveaway-container {
+  background-color: var(--dark);
+  padding: 5rem 0;
+}
+.giveaway-img {
+  min-height: 21rem;
+}
+@media only screen and (max-width: 36rem) {
+  .giveaway-img {
+    max-height: 5rem;
+  }
+}
+.giveaway-title, .giveaway-name {
+  color: var(--light);
+  text-align: center;
+}
+.giveaway-title {
+  font-size: 3rem;
+  font-weight: var(--bold);
+}
+@media only screen and (max-width: 36rem) {
+  .giveaway-title {
+    font-size: 2rem;
+  }
+}
+.giveaway-name {
+  font-size: 1.3rem;
+  line-height: 1rem;
+}
+.giveaway-deadline {
+  padding: 1rem 0;
+  margin: 1rem 0 2rem 0;
+  border-top: 2px solid var(--gray);
+  border-bottom: 2px solid var(--gray);
+}
+.giveaway-deadline-format h4 {
+  font-size: 3rem;
+  color: var(--light);
+  text-align: center;
+}
+@media only screen and (max-width: 36rem) {
+  .giveaway-deadline-format h4 {
+    font-size: 2rem;
+  }
+}
+.giveaway-deadline-format span {
+  color: var(--light);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .search-btn {
   border: none;
   text-decoration: none;
@@ -228,13 +306,29 @@
   padding: 0 1rem;
 }
 
-.action-btn {
+.product-btn {
   background-color: var(--blue);
   border: none;
   color: white;
   width: 100%;
   padding: 0.5rem 0.8rem;
   border-radius: 1rem;
+}
+
+.cta-btn {
+  background-color: var(--blue);
+  border: none;
+  color: white;
+  width: 50%;
+  padding: 1rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 48rem) {
+  .cta-btn {
+    width: 100%;
+    font-size: 1.3rem;
+  }
 }
 
 .fa-star {

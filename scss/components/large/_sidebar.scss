@@ -6,15 +6,42 @@
     background: var(--dark);
     transform: translate(-100%);
     z-index: 1000;
+    padding: 0;
     a, a:hover {
         color: var(--light);
+    }
+    &-header{
+        padding: 0 1rem;
+        &-img {
+            width: 9rem;
+        }
+        &-close {
+            float: right;
+            line-height: 4rem;
+            padding-right: 1rem;
+        }
+    }
+    &-body{
+        &-item{
+            &:hover {
+                background-color: var(--lightDark);
+            }
+            &-link {
+                display: block;
+                padding: 0.5rem 1rem;
+                &-chevron {
+                    float: right;
+                    margin-right: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+        &-title {
+            color:var(--light);
+        }
     }
 }
 
 .show-sidebar {
     transform: translate(0);
-}
-
-.close-icon {
-    margin-top: 50%;
 }
