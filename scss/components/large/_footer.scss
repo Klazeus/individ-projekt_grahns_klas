@@ -1,0 +1,54 @@
+.footer-container  {
+    background-color: var(--lightDark);
+    margin-top: 9rem;
+}
+
+.footer-info {
+    color: var(--light);
+    padding: 0 7%;
+    &-img {
+        width: 10rem;
+    }
+    &-heading {
+        line-height: 3rem;
+        border-bottom: 2px solid var(--light);
+    }
+    &-list {
+        &-item{
+            a {
+                color: var(--light);
+            }
+        }
+    }
+}
+
+.sub-footer {
+    background-color: var(--blue);
+    &-media {
+        .fab {
+            padding: 0.7rem;
+            font-size: 1.5rem;
+            width: 3rem;
+            text-align: center;
+            text-decoration: none;
+            margin: 0.5rem 0.5rem;
+            border-radius: 50%;
+          }
+        .fa-facebook-f {
+            background: var(--light);
+            color: var(--blue);
+        }
+        .fa-twitter {
+            background: var(--light);
+            color: var(--blue);
+          }
+          .fa-linkedin {
+            background: var(--light);
+            color: var(--blue);
+          }
+          .fa-instagram {
+            background: var(--light);
+            color: var(--blue);
+          }
+    }
+}

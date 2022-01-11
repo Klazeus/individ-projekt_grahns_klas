@@ -7,23 +7,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"/>
     <link rel="stylesheet" href="./css/styles.min.css">
-    <title>Document</title>
+    <title>Synergize</title>
   </head>
   <body>
     <header>
       <nav class="navbar-main navbar">
         <div class="container">
-            <div class="col-3">
+            <div class="col-1 col-sm-3">
                 <div class="mobile-menu">
                   <a href="javascript:void(0);" class="sidebar-toggle-mobile">
                     <i class="fas fa-bars"></i>
                   </a>
                 </div>
                 <div class="logo col-12 col-sm-10 col-xl-6">
-                  <img src="img/logo/webb-logo-white.svg" alt="synergize">
+                  <a href="./main.html"><img src="img/logo/webb-logo-white.svg" alt="synergize"></a>
                 </div>
             </div>
-            <div class="col-6 col-lg-7 position-relative">
+            <div class="col-8 col-sm-7 position-relative">
               <div class="searchbar input-group mb-3 position-absolute top-50 translate-middle-y">
                 <input type="text" class="form-control" placeholder="Search for a product" aria-label="Search for a product" aria-describedby="button-addon2">
                 <button class="search-btn" type="button" id="button-addon2">
@@ -31,17 +31,16 @@
                 </button>
               </div>
               <div class="logo-mobile col-6 mx-auto">
-                <img src="img/logo/webb-logo-white.svg" alt="synergize">
+                <a href="./main.html"><img src="img/logo/webb-logo-white.svg" alt="synergize"></a>
               </div>
             </div>
-            <div class="col-3 col-lg-2">
-              <div class="nav-icons float-end">
-                <a href="javascript:void(0);" class="user-icon me-4">
+            <div class="col-3 col-sm-2">
+              <div class="nav-icons">
+                <a href="javascript:void(0);" class="user-icon me-3 me-sm-4">
                   <i class="fas fa-user"></i>
                 </a>
                 <a href="javascript:void(0);" class="shopping-cart position-relative">
                   <i class="fas fa-shopping-bag"></i>
-                  <span class="cart-items position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
                 </a>
               </div>
             </div>
@@ -56,16 +55,16 @@
                 <span class="icon-text">All</span>
               </a>
               <li class="nav-item">
-                <a class="nav-link" href="#">Costumer Service</a>
+                <a class="nav-link" href="javascript:void(0);">Costumer Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Current Deals</a>
+                <a class="nav-link" href="javascript:void(0);">Current Deals</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="javascript:void(0);">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="./faq.html">FAQ</a>
               </li>
             </ul>
           </div>
@@ -556,7 +555,6 @@
           </div>
         </div>
       </div>
-      <div class="test" style="height: 100px;"></div>
     </main>
 
     <!--Sidebar menu-->
@@ -587,7 +585,7 @@
               </a>
             </li>
             <li class="sidebar-body-item">
-              <a href="javascript:void(0);" class="sidebar-body-item-link">
+              <a href="./faq.html" class="sidebar-body-item-link">
                 <i class="fs-4 fas fa-question-circle"></i><span class="ms-2">FAQ</span>
               </a>
             </li>
@@ -603,6 +601,9 @@
           <h4 class="sidebar-body-title px-3">Categories</h4>
           <div>
             <ul>
+              <li class="sidebar-body-item">
+                <a href="./main.html" class="sidebar-body-item-link">Home</a>
+              </li>
               <li class="sidebar-body-item">
                 <a href="javascript:void(0);" class="sidebar-body-item-link">Components<i class="sidebar-body-item-link-chevron fas fa-chevron-right"></i></a>
               </li>
@@ -624,37 +625,43 @@
       </div>
     </aside>
 
-    <!--Cart sidebar-->
-  <!--  <div class="cart-overlay">
-      <div class="cart">
-        <span class="close-cart">
-          <i class="fas fa-window-close"></i>
-        </span>
-        <h2>test cart</h2>
-        <div class="cart-content">
-     
-        </div>
-      </div>
-    </div>-->
-
     <!-- Footer -->
-    <footer class="footer-container container-fluid test-red p-0" style="height: 300px;">
-      <div class="container">
+    <footer class="footer-container container-fluid p-0">
+      <div class="container py-5">
         <div class="row">
-          <div class="col-4 test-blue">
-            <h4>Information</h4>
+          <div class="footer-info col-12 col-lg-4">
+            <h4 class="footer-info-heading">Account</h4>
+            <ul class="footer-info-list">
+              <li class="footer-info-list-item"><a href="javascript:void(0);">My account</a></li>
+              <li class="footer-info-list-item"><a href="javascript:void(0);">Gift cards</a></li>
+              <li class="footer-info-list-item"><a href="javascript:void(0);">Order history</a></li>
+              <li class="footer-info-list-item"><a href="javascript:void(0);">Personal data</a></li>
+            </ul>
           </div>
-          <div class="col-4 test-blue">
-            <p>asdad</p>
+          <div class="footer-info col-12 col-lg-4">
+            <h4 class="footer-info-heading">Information</h4>
+            <ul class="footer-info-list">
+              <li class="footer-info-list-item"><a href="javascript:void(0);">About us</a></li>
+              <li class="footer-info-list-item"><a href="javascript:void(0);">Careers</a></li>
+              <li class="footer-info-list-item"><a href="./faq.html">FAQ</a></li>
+              <li class="footer-info-list-item"><a href="javascript:void(0);">Guide</a></li>
+              <li class="footer-info-list-item"><a href="javascript:void(0);">Support</a></li>
+            </ul>
           </div>
-          <div class="col-4 test-blue">
-            <p>asdad</p>
+          <div class="footer-info col-12 col-lg-4">
+            <img class="footer-info-img" src="img/logo/webb-logo-white.svg" alt="synergize">
+            <p>Synergize is e-shop that sells consumer electronics to end costumers and resellers.  </p>
           </div>
         </div>
       </div>
-      <div class="container-fluid test-red">
-        <div class="mx-auto col-4 test-blue">
-          <p>asda</p>
+      <div class="sub-footer container-fluid">
+        <div class="sub-footer-media d-flex justify-content-center py-2">
+          <div class="mx-auto">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
         </div>
       </div>
     </footer>

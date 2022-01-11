@@ -3,6 +3,10 @@
     a, a:hover {
         color: var(--light);
     }
+    .nav-icons{
+        float: right;
+    }
+
     @media only screen and (min-width: 36rem){
         .mobile-menu{
             display: none;
@@ -16,6 +20,7 @@
         .fa-shopping-bag {
             font-size: 1.5rem;
         }
+
     }
     @media only screen and (max-width: 36rem){
         .searchbar{
@@ -23,6 +28,15 @@
         }
         .logo {
             display: none;
+        }
+        .fa-user {
+            font-size: 1.2rem;
+        }
+        .fa-shopping-bag {
+            font-size: 1.2rem;
+        }
+        .fa-bars {
+            font-size: 1.2rem;
         }
     }
 
