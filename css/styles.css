@@ -422,6 +422,10 @@
   font-weight: var(--bold);
 }
 
+#map {
+  height: 20rem;
+}
+
 /* Large */
 /* Small */
 .test-red {
