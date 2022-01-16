@@ -32,7 +32,6 @@ const futureTime = futureDate.getTime();
 function getremainingTime() {
     const today = new Date().getTime();
     const timeLeft = futureTime - today;
-    console.log(timeLeft);
     // 1s = 1000ms
     // 1m = 60s
     // 1hr = 60min
@@ -64,7 +63,7 @@ function getremainingTime() {
 
     if(timeLeft < 0){
         clearInterval(countdown);
-        deadline.innerHTML = `<h4 class="giveaway-expired">sorry the giveaway has already expired</h4>`
+        deadline.innerHTML = `<h4 class="giveaway-expired">sorry the giveaway has already expired</h4>`;
     }
 }
 // Countdown

@@ -14,5 +14,3 @@ toggleIconMobile.addEventListener("click", function() {
 closeIcon.addEventListener("click", function() {
     sidebar.classList.remove("show-sidebar");
 });
-
-

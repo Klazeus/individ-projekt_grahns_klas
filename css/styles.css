@@ -276,7 +276,7 @@
 
 .footer-container {
   background-color: var(--lightDark);
-  margin-top: 9rem;
+  margin-top: 5rem;
 }
 
 .footer-info {
@@ -326,6 +326,9 @@
 .faq-title {
   text-align: center;
 }
+.faq-title h2 {
+  font-weight: var(--bold);
+}
 
 .faq-question-item {
   background: var(--light);
@@ -373,6 +376,11 @@
 }
 .show-faq-text .faq-question-item-text {
   display: block;
+}
+
+.ads-img {
+  width: 100%;
+  height: auto;
 }
 
 .search-btn {

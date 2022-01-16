@@ -1,5 +1,8 @@
 .faq-title {
     text-align: center;
+    h2 {
+        font-weight: var(--bold);
+    }
 }
 .faq-question {
     &-item{
