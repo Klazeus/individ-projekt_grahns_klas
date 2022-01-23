@@ -6,7 +6,7 @@
   background: var(--dark);
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
-  z-index: 1000;
+  z-index: 3000;
   padding: 0;
 }
 .sidebar a, .sidebar a:hover {
@@ -37,6 +37,7 @@
 }
 .sidebar-body-title {
   color: var(--light);
+  font-size: 1.5rem;
 }
 
 .show-sidebar {
@@ -44,59 +45,59 @@
           transform: translate(0);
 }
 
-.navbar-main {
-  background-color: var(--lightDark);
-}
-.navbar-main a, .navbar-main a:hover {
-  color: var(--light);
-}
-.navbar-main .nav-icons {
-  float: right;
-}
-@media only screen and (min-width: 36rem) {
-  .navbar-main .mobile-menu {
-    display: none;
-  }
-  .navbar-main .logo-mobile {
-    display: none;
-  }
-  .navbar-main .fa-user {
-    font-size: 1.5rem;
-  }
-  .navbar-main .fa-shopping-bag {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 36rem) {
-  .navbar-main .searchbar {
-    display: none;
-  }
-  .navbar-main .logo {
-    display: none;
-  }
-  .navbar-main .fa-user {
-    font-size: 1.2rem;
-  }
-  .navbar-main .fa-shopping-bag {
-    font-size: 1.2rem;
-  }
-  .navbar-main .fa-bars {
-    font-size: 1.2rem;
-  }
-}
-
 .navbar-second {
-  background-color: var(--blue);
+  background-color: var(--lightDark);
 }
 .navbar-second a, .navbar-second a:hover {
   color: var(--light);
 }
-.navbar-second .nav-link {
+.navbar-second .nav-icons {
+  float: right;
+}
+@media only screen and (min-width: 36rem) {
+  .navbar-second .mobile-menu {
+    display: none;
+  }
+  .navbar-second .logo-mobile {
+    display: none;
+  }
+  .navbar-second .fa-user {
+    font-size: 1.5rem;
+  }
+  .navbar-second .fa-shopping-bag {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 36rem) {
+  .navbar-second .searchbar {
+    display: none;
+  }
+  .navbar-second .logo {
+    display: none;
+  }
+  .navbar-second .fa-user {
+    font-size: 1.2rem;
+  }
+  .navbar-second .fa-shopping-bag {
+    font-size: 1.2rem;
+  }
+  .navbar-second .fa-bars {
+    font-size: 1.2rem;
+  }
+}
+
+.navbar-main {
+  background-color: var(--blue);
+}
+.navbar-main a, .navbar-main a:hover {
+  color: var(--light);
+}
+.navbar-main .nav-link {
   padding: 0 0 0 2rem;
   color: var(--light);
 }
 @media only screen and (max-width: 36rem) {
-  .navbar-second {
+  .navbar-main {
     display: none;
   }
 }
@@ -254,13 +255,13 @@
   border-top: 2px solid var(--gray);
   border-bottom: 2px solid var(--gray);
 }
-.giveaway-deadline-format h4 {
+.giveaway-deadline-format p {
   font-size: 3rem;
   color: var(--light);
   text-align: center;
 }
 @media only screen and (max-width: 36rem) {
-  .giveaway-deadline-format h4 {
+  .giveaway-deadline-format p {
     font-size: 2rem;
   }
 }
@@ -325,8 +326,6 @@
 
 .faq-title {
   text-align: center;
-}
-.faq-title h2 {
   font-weight: var(--bold);
 }
 

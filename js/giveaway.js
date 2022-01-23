@@ -23,7 +23,7 @@ const weekdays = [
 ];*/
 
 const deadline = document.querySelector(".giveaway-deadline");
-const timer = document.querySelectorAll(".giveaway-deadline-format h4");
+const timer = document.querySelectorAll(".giveaway-deadline-format p");
 
 let futureDate = new Date(2022,1,13,12,30,0);
 
@@ -63,7 +63,7 @@ function getremainingTime() {
 
     if(timeLeft < 0){
         clearInterval(countdown);
-        deadline.innerHTML = `<h4 class="giveaway-expired">sorry the giveaway has already expired</h4>`;
+        deadline.innerHTML = `<h3 class="giveaway-expired">sorry the giveaway has already expired</h3>`;
     }
 }
 // Countdown
