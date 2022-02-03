@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <title>Synergize</title>
+  </head>
+  <body>
+    <header>
+      <a class="link-skip" href="#products">
+        Skip navigation
+      </a>
+      <div class="navbar-second navbar">
+        <div class="container">
+            <div class="col-1 col-sm-3">
+                <div class="mobile-menu">
+                  <a href="#sidebar" class="sidebar-toggle-mobile">
+                    <i class="fas fa-bars" alt="mobile menu icon"></i>
+                  </a>
+                </div>
+                <div class="logo col-12 col-sm-10 col-xl-6">
+                  <a href="./index.html"><img src="img/logo/webb-logo-white.svg" alt="synergize"></a>
+                </div>
+            </div>
+            <div class="col-8 col-sm-7 position-relative">
+              <div class="searchbar input-group mb-3 position-absolute top-50 translate-middle-y">
+                <input type="text" class="form-control" placeholder="Search for a product" aria-label="Search for a product">
+                <button class="search-btn" type="button" aria-label="Search Button">
+                  <i class="fas fa-search" alt="Search Icon"></i>
+                </button>
+              </div>
+              <div class="logo-mobile col-6 mx-auto">
+                <a href="./index.html"><img src="img/logo/webb-logo-white.svg" alt="synergize"></a>
+              </div>
+            </div>
+            <div class="col-3 col-sm-2">
+              <div class="nav-icons">
+                <a href="#" class="user-icon me-3 me-sm-4" aria-label="User Account Link">
+                  <i class="fas fa-user" alt="User Icon"></i>
+                </a>
+                <a href="#" class="shopping-cart position-relative" aria-label="Shopping Bag Link">
+                  <i class="fas fa-shopping-bag" alt="Shopping Bag Icon"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <nav class="navbar-main navbar" aria-label="navbar">
+        <div class="container">
+          <div class="col-12">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#sidebar" class="sidebar-toggle">
+                  <i class="fas fa-bars"></i>
+                  <span class="icon-text">All</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customer Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Current Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      
+    </header>
+    <main>
+      <!-- Carousel -->
+      <section class="container mt-5">
+        <div class="row">
+          <picture class="slide-img col-12 col-lg-9">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="slide-btn active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="slide-btn" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="slide-btn" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/slide/slide-2.jpg" class="d-block w-100" alt="slide1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/slide/slide-test.jpg" class="d-block w-100" alt="slide2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/slide/slide-2.jpg" class="d-block w-100" alt="slide3">
+                </div>
+              </div>
+            </div>
+          </picture>
+          <aside class="slide-side-img col-3" aria-label="Delivering Options">
+            <picture>
+              <img src="./img/slide/image-for-slide.jpg" class="d-block w-100" alt="slide-side-img">
+            </picture>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Best selling products -->
+      <section class="container mt-5" id="products">
+        <header class="row">
+          <h1 class="title">Best sellers</h1>
+        </header>
+        <div class="row">
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-container h-product col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="product-item">
+              <div class="row">
+                <div class="product-item-header col-5 col-sm-12">
+                  <img src="./img/product/macbook.webp" class="product-item-header-img u-photo px-0 px-md-3 img-fluid" alt="macbook">
+                </div>
+                <div class="product-item-content col-7 col-sm-12">
+                  <a href="#" class="product-item-content-title p-name u-url">
+                    MacBook Air 13 M1/8/256 2020 (space grey)
+                  </a>
+                  <div class="product-item-content-subtitle u-identifier">
+                    Artnr: 918218002
+                  </div>
+                  <div class="product-item-content-rating p-review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="product-item-content-rating-amount">(20)</span>
+                  </div>
+                  <div class="product-item-content-description e-description">
+                    <ul>
+                      <li>Apple M1 chip with 8-core CPU and 8-core GPU</li>
+                      <li>16GB unified memory</li>
+                      <li>512GB SSD storage</li>
+                    </ul>
+                  </div>
+                  <div class="product-item-content-price p-price">
+                    <p>$1,449</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="product-item-footer px-sm-0">
+                  <button class="product-btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Giveaway countdown -->
+      <section class="giveaway-container container-fluid mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 p-0">
+              <picture class="giveaway-img-container">
+                <img src="./img/product/giveaway-xbox-one-s.jpg" class="giveaway-img img-fluid" alt="gift picture">
+              </picture>
+            </div>
+            <article class="col-12 col-lg-6 px-5 mt-4 mt-lg-0">
+              <div class="row">
+                <h2 class="giveaway-title">Giveaway</h2>
+                <p class="giveaway-name">Xbox One S</p>
+              </div>
+              <div class="row">
+                <div class="giveaway-deadline">
+                  <div class="row d-flex justify-content-center ">
+                    <!-- days -->
+                    <div class="giveaway-deadline-format col-3 col-md-2 col-lg-3 col-xl-2">
+                      <div>
+                        <p class="giveaway-deadline-days">0</p>
+                        <span>days</span>
+                      </div>
+                    </div>
+                    <!-- hours -->
+                    <div class="giveaway-deadline-format col-3 col-md-2 col-lg-3 col-xl-2">
+                      <div>
+                        <p class="giveaway-deadline-hours">0</p>
+                        <span>hours</span>
+                      </div>
+                    </div>
+                    <!-- mins -->
+                    <div class="giveaway-deadline-format col-3 col-md-2 col-lg-3 col-xl-2">
+                      <div>
+                        <p class="giveaway-deadline-mins">0</p>
+                        <span>mins</span>
+                      </div>
+                    </div>
+                    <!-- sec -->
+                    <div class="giveaway-deadline-format col-3 col-md-2 col-lg-3 col-xl-2">
+                      <div>
+                        <p class="giveaway-deadline-sec">0</p>
+                        <span>secs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <button class="cta-btn mx-auto">
+                  Enter here
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ads -->
+      <div class="container mt-5">
+        <div class="row">
+          <picture class="ads-container col-12 col-lg-6 py-3 py-lg-5">
+            <img src="img/information/ad-2.jpg" class="ads-img"  alt="ad-img">
+          </picture>
+          <picture class="ads-container col-12 col-lg-6 py-3 py-lg-5">
+            <img src="img/information/ad-1.jpg" class="ads-img"  alt="ad-img">
+          </picture>
+        </div>
+      </div>
+    </main>
+
+    <!--Sidebar menu-->
+    <aside class="sidebar container-fluid col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-2" id="sidebar">
+      <header class="sidebar-header mt-4">
+        <img class="sidebar-header-img" src="img/logo/webb-logo-white.svg" alt="synergize">
+        <a href="#" class="sidebar-header-close close-icon" aria-label="Close Button">
+          <i class="fas fa-times" alt="Close Icon"></i>
+        </a>
+      </header>
+      <div class="sidebar-body">
+        <!-- Menu icons -->
+        <nav aria-label="Site Navigation">
+          <ul>
+            <li class="sidebar-body-item">
+              <a href="#" class="sidebar-body-item-link">
+                <i class="fs-4 fas fa-user-circle"></i><span class="ms-2">My account</span>
+              </a>
+            </li>
+            <li class="sidebar-body-item">
+              <a href="#" class="sidebar-body-item-link">
+                <i class="fs-4 fas fa-cube"></i><span class="ms-2">My orders</span>
+              </a>
+            </li>
+            <li class="sidebar-body-item">
+              <a href="#" class="sidebar-body-item-link">
+                <i class="fs-5 fas fa-heart"></i><span class="ms-2">Current deals</span>
+              </a>
+            </li>
+            <li class="sidebar-body-item">
+              <a href="./faq.html" class="sidebar-body-item-link">
+                <i class="fs-4 fas fa-question-circle"></i><span class="ms-2">FAQ</span>
+              </a>
+            </li>
+            <li class="sidebar-body-item">
+              <a href="#" class="sidebar-body-item-link">
+                <i class="fs-5 fas fa-users"></i><span class="ms-2">About us</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Categories -->
+        <div class="mt-4">
+          <h2 class="sidebar-body-title px-3">Categories</h2>
+          <nav aria-label="Categories Navigation">
+            <ul>
+              <li class="sidebar-body-item">
+                <a href="./index.html" class="sidebar-body-item-link">Home</a>
+              </li>
+              <li class="sidebar-body-item">
+                <a href="#" class="sidebar-body-item-link">Components<i class="sidebar-body-item-link-chevron fas fa-chevron-right"></i></a>
+              </li>
+              <li class="sidebar-body-item">
+                <a href="#" class="sidebar-body-item-link">Computer systems<i class="sidebar-body-item-link-chevron fas fa-chevron-right"></i></a>
+              </li>
+              <li class="sidebar-body-item">
+                <a href="#" class="sidebar-body-item-link">Electronics<i class="sidebar-body-item-link-chevron fas fa-chevron-right"></i></a>
+              </li>
+              <li class="sidebar-body-item">
+                <a href="#" class="sidebar-body-item-link">Gaming<i class="sidebar-body-item-link-chevron fas fa-chevron-right"></i></a>
+              </li>
+              <li class="sidebar-body-item">
+                <a href="#" class="sidebar-body-item-link">Networking<i class="sidebar-body-item-link-chevron fas fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer-container container-fluid p-0">
+      <div class="container py-5">
+        <div class="row">
+          <nav class="footer-info col-12 col-lg-4" aria-label="Account Navigation Footer">
+            <h3 class="footer-info-heading">Account</h3>
+            <ul class="footer-info-list">
+              <li class="footer-info-list-item"><a href="#">My account</a></li>
+              <li class="footer-info-list-item"><a href="#">Gift cards</a></li>
+              <li class="footer-info-list-item"><a href="#">Order history</a></li>
+              <li class="footer-info-list-item"><a href="#">Personal data</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-info col-12 col-lg-4" aria-label="Information Navigation Footer">
+            <h3 class="footer-info-heading">Information</h3>
+            <ul class="footer-info-list">
+              <li class="footer-info-list-item"><a href="#">About us</a></li>
+              <li class="footer-info-list-item"><a href="#">Careers</a></li>
+              <li class="footer-info-list-item"><a href="./faq.html">FAQ</a></li>
+              <li class="footer-info-list-item"><a href="#">Guide</a></li>
+              <li class="footer-info-list-item"><a href="#">Support</a></li>
+            </ul>
+          </nav>
+          <div class="footer-info col-12 col-lg-4">
+            <img class="footer-info-img" src="img/logo/webb-logo-white.svg" alt="synergize">
+            <p>Synergize is e-shop that sells consumer electronics to end costumers and resellers.  </p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="sub-footer container-fluid">
+        <div class="sub-footer-media d-flex justify-content-center py-2">
+          <nav class="mx-auto" aria-label="Social Media Navigation Footer">
+            <a href="#" class="fab fa-facebook-f" aria-label="Facebook Link"></a>
+            <a href="#" class="fab fa-twitter" aria-label="Twitter Link"></a>
+            <a href="#" class="fab fa-instagram" aria-label="Instagram Link"></a>
+            <a href="#" class="fab fa-linkedin" aria-label="LinkedIn Link"></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!--Boostrap JS import-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Leaflet import-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!--Custom JS-->
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/giveaway.js"></script>
+    <script src="./js/map.js"></script>
+  </body>
+</html>
